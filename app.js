@@ -12,8 +12,8 @@ const shopRouter = require('./routes/shop');
 const app = express();
 
 app.use(bodyParser.urlencoded({extended: false}));
-app.use(adminRouter);
-app.use(shopRouter);
+app.use('/admin',adminRouter);
+app.use('/shop',shopRouter);
 app.use((req,res,next) => {
   res.status(404).send('404 Not Found');
 })
