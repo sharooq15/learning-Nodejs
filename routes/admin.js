@@ -1,10 +1,10 @@
 const express = require('express');
+const path = require('path');
 
 const router = express.Router();
 
 router.get('/add-product',(req, res, next) => {
-  res.send('<form action="/admin/product" method="POST"><input type="text" name="title"><button type="submit">Add Product</button></form>')
-});
+  res.sendFile(path.resolve(__dirname, '../views/add-product.html'))});
 
 // Filters only the post requests.
 router.post('/product',(req, res, next) => {
