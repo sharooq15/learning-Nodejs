@@ -1,5 +1,6 @@
 // Node specific modules
 const http = require('http');
+const path = require('path');
 
 // Third party imports
 const express = require('express');
@@ -15,7 +16,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use('/admin',adminRouter);
 app.use('/shop',shopRouter);
 app.use((req,res,next) => {
-  res.status(404).send('404 Not Found');
+  res.status(404).sendFile(path.resolve(__dirname, './views/404.html'))
 })
 // Using middle wares
 // The functions added to it will be executed for each incoming request. 
