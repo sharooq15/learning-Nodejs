@@ -1,29 +1,20 @@
 {
   "name": "nodejs-complete-guide",
   "version": "1.0.0",
-  "description": "This repository is for self-learning the advanced concepts on node js",
-  "main": "index.js",
+  "description": "Complete Node.js Guide",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-server": "node app.js",
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "start-server": "node app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sharooq15/learning-Nodejs.git"
-  },
-  "keywords": [],
-  "author": "sharooq",
+  "author": "Maximilian Schwarzmüller",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sharooq15/learning-Nodejs/issues"
-  },
-  "homepage": "https://github.com/sharooq15/learning-Nodejs#readme",
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "nodemon": "^1.18.3"
   },
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
   }
 }
